@@ -1,0 +1,40 @@
+main {
+    width: 60%;
+    margin: 100px auto 0;
+}
+
+.meme-list {
+    padding: 0;
+    margin-top: 50px;
+    list-style: none;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+img {
+    margin: 0 auto;
+    width: 700px;
+    height: 0;
+    transition: height 500ms;
+    display: block;
+}
+
+li {
+    border-top: 2px solid gray;
+    padding-bottom: 40px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgb(250, 250, 250);
+}
+
+li:hover>img {
+    /* display: block; */
+    height: auto;
+    transition: height 500ms;
+}
