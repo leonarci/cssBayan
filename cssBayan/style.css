@@ -7,14 +7,14 @@ html {
 
 main {
     width: 60%;
-    margin: 100px auto 0;
+    margin: 6.25rem auto 0;
 }
 
 .meme-list {
     padding: 0;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     list-style: none;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 700;
 }
 
@@ -27,13 +27,13 @@ main {
 }
 
 li {
-    border-top: 2px solid gray;
-    padding-bottom: 40px;
+    border-top: 0.125rem solid gray;
+    padding-bottom: 2.5rem;
     position: relative;
 }
 
 p {
-    margin: 10px 0;
+    margin: 0.65rem 0;
     color: rgb(64, 64, 238)
 }
 
@@ -45,7 +45,7 @@ p {
     }
 
     li:hover>.meme-img {
-        max-height: 1000px;
+        max-height: 100vh;
     }
 
     ul:hover .state-icon {
@@ -73,7 +73,7 @@ input {
 }
 
 input:checked~.meme-img {
-    max-height: 1000px;
+    max-height: 100vh;
 }
 
 input:checked~.state-icon {
@@ -87,36 +87,44 @@ input:checked~p {
 .state-icon {
     display: none;
     position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 30px;
-    height: 30px;
+    right: 0.625rem;
+    top: 0.625rem;
+    width: 1.875rem;
+    height: 1.875rem;
     transition: transform 250ms;
 }
 
 
 @media all and (max-width: 1200px) {
     .meme-list {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .state-icon {
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    li {
+        padding-bottom: 1rem;
     }
 }
 
 @media all and (max-width: 768px) {
     .meme-list {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .state-icon {
-        width: 20px;
-        height: 20px;
+        width: 1rem;
+        height: 1rem;
     }
 
     p {
-        padding-right: 30px;
+        padding-right: 1.875rem;
+    }
+
+    li {
+        padding-bottom: 0.625rem;
     }
 }
