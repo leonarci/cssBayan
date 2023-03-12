@@ -1,6 +1,8 @@
 html {
     width: 100vw;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    min-width: 320px;
 }
 
 main {
@@ -18,7 +20,7 @@ main {
 
 .meme-img {
     margin: 0 auto;
-    width: 700px;
+    width: 80%;
     max-height: 0;
     transition: max-height 250ms ease-out;
     display: block;
@@ -77,4 +79,32 @@ input:checked~.state-icon {
     top: 10px;
     width: 30px;
     height: 30px;
+    transition: transform 250ms;
+}
+
+
+@media all and (max-width: 1200px) {
+    .meme-list {
+        font-size: 20px;
+    }
+
+    .state-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .meme-list {
+        font-size: 16px;
+    }
+
+    .state-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    p {
+        padding-right: 30px;
+    }
 }
