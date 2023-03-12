@@ -34,6 +34,7 @@ li {
 
 p {
     margin: 10px 0;
+    color: rgb(64, 64, 238)
 }
 
 li:hover {
@@ -47,6 +48,10 @@ li:hover>.meme-img {
 
 ul:hover .state-icon {
     display: block;
+}
+
+ul:hover p {
+    color: black;
 }
 
 li:hover>.state-icon {
@@ -70,6 +75,10 @@ input:checked~.meme-img {
 
 input:checked~.state-icon {
     transform: rotate(45deg);
+}
+
+input:checked~p {
+    color: black;
 }
 
 .state-icon {
