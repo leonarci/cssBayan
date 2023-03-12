@@ -14,8 +14,8 @@ main {
 img {
     margin: 0 auto;
     width: 700px;
-    height: 0;
-    transition: height 500ms;
+    max-height: 0;
+    transition: max-height 250ms ease-out;
     display: block;
 }
 
@@ -34,7 +34,5 @@ li:hover {
 }
 
 li:hover>img {
-    /* display: block; */
-    height: auto;
-    transition: height 500ms;
+    max-height: 1000px;
 }
